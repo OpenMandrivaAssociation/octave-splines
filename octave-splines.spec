@@ -4,10 +4,10 @@ Summary:	Additional spline functions
 Name:		octave-%{octpkg}
 Version:	1.3.4
 Release:	1
+Url:		https://octave.sourceforge.io/%{octpkg}/
 Source0:	http://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
 License:	GPLv3+ and Public Domain
 Group:		Sciences/Mathematics
-Url:		https://octave.sourceforge.io/%{octpkg}/
 BuildArch:	noarch
 
 BuildRequires:	octave-devel >= 3.6.0
