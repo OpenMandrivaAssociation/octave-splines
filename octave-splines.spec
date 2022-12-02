@@ -4,8 +4,8 @@ Summary:	Additional spline functions
 Name:		octave-%{octpkg}
 Version:	1.3.4
 Release:	1
-Url:		https://octave.sourceforge.io/%{octpkg}/
-Source0:	http://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
+Url:		https://packages.octave.org/%{octpkg}/
+Source0:	https://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
 License:	GPLv3+ and Public Domain
 Group:		Sciences/Mathematics
 BuildArch:	noarch
@@ -19,8 +19,6 @@ Requires(postun): octave
 
 %description
 Additional spline functions.
-
-This package is part of community Octave-Forge collection.
 
 %files
 %license COPYING
