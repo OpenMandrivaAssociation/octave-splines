@@ -1,21 +1,22 @@
 %global octpkg splines
 
 Summary:	Additional spline functions
-Name:		octave-%{octpkg}
+Name:		octave-splines
 Version:	1.3.4
-Release:	1
-Url:		https://packages.octave.org/%{octpkg}/
-Source0:	https://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
+Release:	2
 License:	GPLv3+ and Public Domain
 Group:		Sciences/Mathematics
-BuildArch:	noarch
+#Url:		https://packages.octave.org/splines/
+Source0:	https://downloads.sourceforge.net/octave/splines-%{version}.tar.gz
 
-BuildRequires:	octave-devel >= 3.6.0
+BuildRequires:  octave-devel >= 3.6.0
 
 Requires:	octave(api) = %{octave_api}
 
 Requires(post): octave
 Requires(postun): octave
+
+BuildArch:	noarch
 
 %description
 Additional spline functions.
@@ -29,10 +30,9 @@ Additional spline functions.
 #---------------------------------------------------------------------------
 
 %prep
-%autosetup -n %{octpkg}-%{version}
+%autosetup -p1 -n %{octpkg}-%{version}
 
 %build
-%set_build_flags
 %octave_pkg_build
 
 %install
