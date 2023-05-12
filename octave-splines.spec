@@ -30,7 +30,7 @@ Additional spline functions.
 #---------------------------------------------------------------------------
 
 %prep
-%autosetup -p1 -n %{octpkg}-%{version}
+%autosetup -p1 -n %{octpkg}
 
 %build
 %octave_pkg_build
