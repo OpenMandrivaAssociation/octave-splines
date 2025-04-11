@@ -3,10 +3,10 @@
 Summary:	Additional spline functions
 Name:		octave-splines
 Version:	1.3.5
-Release:	1
+Release:	2
 License:	GPLv3+ and Public Domain
 Group:		Sciences/Mathematics
-#Url:		https://packages.octave.org/splines/
+Url:		https://packages.octave.org/splines/
 Source0:	https://downloads.sourceforge.net/octave/splines-%{version}.tar.gz
 
 BuildRequires:  octave-devel >= 3.6.0
